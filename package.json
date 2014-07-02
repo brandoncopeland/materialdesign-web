@@ -1,0 +1,24 @@
+{
+  "name": "inkcss",
+  "description": "css framework based on Google Material Design",
+  "version": "0.0.0",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "google",
+    "material",
+    "design"
+  ],
+  "author": "Brandon Copeland <br@ndoncopeland.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandoncopeland/inkcss.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
