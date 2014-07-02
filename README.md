@@ -1,1 +1,1 @@
-css framework based on [Google Material Design](http://www.google.com/design/spec/material-design/)
+[Sass](http://sass-lang.com/) framework based on [Google Material Design](http://www.google.com/design/spec/material-design/)
