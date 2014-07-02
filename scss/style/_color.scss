@@ -14,7 +14,7 @@ $color-hint-inverse: opacify(rgba(255, 255, 255, 0), 0.26);
 $color-dividers-inverse: opacify(rgba(255, 255, 255, 0), 0.12);
 
 // Palette
-// defaults to `red`
+// Defaults to primary `indigo` and accent 'pink'
 // options: red, pink, purple, deeppurple, indigo, blue, lightblue, cyan, teal, green, lightgreen, lime, yellow, amber, orange, deeporange, brown (no accent), grey (no accent), bluegrey (no accent)
 
 // Red
@@ -380,5 +380,5 @@ $color-dividers-inverse: opacify(rgba(255, 255, 255, 0), 0.12);
 }
 
 // Default palette
-@include color-primary-red;
-@include color-accent-red;
+@include color-primary-indigo;
+@include color-accent-pink;

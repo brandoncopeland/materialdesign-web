@@ -29,7 +29,7 @@ Text colors for use on a colored background
 
 ### Palette
 
-Include primary or accent color palette mixins to set the palette prior to styling any elements. Follow the [palette choice specifications][] to select the appropriate color hues. Selected hues should be directly applied to element styles.
+Include primary or accent color palette mixins to set the palette prior to styling any elements. If not explicitly set, the primary palette defaults to `indigo` and the accent palette defaults to `pink`. After setting the palette, follow the [palette choice specifications][] to select the appropriate color hues. Selected hues should be directly applied to element styles.
 
 ```scss
 @import "style/color";
