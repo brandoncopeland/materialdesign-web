@@ -1,0 +1,384 @@
+// _color.scss
+// http://www.google.com/design/spec/style/color.html
+
+// Text
+$color-text: opacify(rgba(0, 0, 0, 0), 0.87);
+$color-icons: opacify(rgba(0, 0, 0, 0), 0.54); // Also applies to secondary text
+$color-hint: opacify(rgba(0, 0, 0, 0), 0.26);
+$color-dividers: opacify(rgba(0, 0, 0, 0), 0.12);
+
+// Inverse text - for colored backgrounds
+$color-text-inverse: opacify(rgba(255, 255, 255, 0), 0.87);
+$color-icons-inverse: opacify(rgba(255, 255, 255, 0), 0.54); // Also applies to secondary text
+$color-hint-inverse: opacify(rgba(255, 255, 255, 0), 0.26);
+$color-dividers-inverse: opacify(rgba(255, 255, 255, 0), 0.12);
+
+// Palette
+// defaults to `red`
+// options: red, pink, purple, deeppurple, indigo, blue, lightblue, cyan, teal, green, lightgreen, lime, yellow, amber, orange, deeporange, brown (no accent), grey (no accent), bluegrey (no accent)
+
+// Red
+@mixin color-primary-red {
+	$color-primary-50:  #fde0dc !global;
+	$color-primary-100: #f9bdbb !global;
+	$color-primary-200: #f69988 !global;
+	$color-primary-300: #f36c60 !global;
+	$color-primary-400: #e84e40 !global;
+	$color-primary-500: #e51c23 !global;
+	$color-primary-600: #dd191d !global;
+	$color-primary-700: #d01716 !global;
+	$color-primary-800: #c41411 !global;
+	$color-primary-900: #b0120a !global;
+}
+@mixin color-accent-red {
+	$color-accent-100: #ff7997 !global;
+	$color-accent-200: #ff5177 !global;
+	$color-accent-400: #ff2d6f !global;
+	$color-accent-700: #e00032 !global;
+}
+
+// Pink
+@mixin color-primary-pink {
+	$color-primary-50:  #fce4ec !global;
+	$color-primary-100: #f8bbd0 !global;
+	$color-primary-200: #f48fb1 !global;
+	$color-primary-300: #f06292 !global;
+	$color-primary-400: #ec407a !global;
+	$color-primary-500: #e91e63 !global;
+	$color-primary-600: #d81b60 !global;
+	$color-primary-700: #c2185b !global;
+	$color-primary-800: #ad1457 !global;
+	$color-primary-900: #880e4f !global;
+}
+@mixin color-accent-pink {
+	$color-accent-100: #ff80ab !global;
+	$color-accent-200: #ff4081 !global;
+	$color-accent-400: #f50057 !global;
+	$color-accent-700: #c51162 !global;
+}
+
+// Purple
+@mixin color-primary-purple {
+	$color-primary-50:  #f3e5f5 !global;
+	$color-primary-100: #e1bee7 !global;
+	$color-primary-200: #ce93d8 !global;
+	$color-primary-300: #ba68c8 !global;
+	$color-primary-400: #ab47bc !global;
+	$color-primary-500: #9c27b0 !global;
+	$color-primary-600: #8e24aa !global;
+	$color-primary-700: #7b1fa2 !global;
+	$color-primary-800: #6a1b9a !global;
+	$color-primary-900: #4a148c !global;
+}
+@mixin color-accent-purple {
+	$color-accent-100: #ea80fc !global;
+	$color-accent-200: #e040fb !global;
+	$color-accent-400: #d500f9 !global;
+	$color-accent-700: #aa00ff !global;
+}
+
+// Deep Purple
+@mixin color-primary-deeppurple {
+	$color-primary-50:  #ede7f6 !global;
+	$color-primary-100: #d1c4e9 !global;
+	$color-primary-200: #b39ddb !global;
+	$color-primary-300: #9575cd !global;
+	$color-primary-400: #7e57c2 !global;
+	$color-primary-500: #673ab7 !global;
+	$color-primary-600: #5e35b1 !global;
+	$color-primary-700: #512da8 !global;
+	$color-primary-800: #4527a0 !global;
+	$color-primary-900: #311b92 !global;
+}
+@mixin color-accent-deeppurple {
+	$color-accent-100: #b388ff !global;
+	$color-accent-200: #7c4dff !global;
+	$color-accent-400: #651fff !global;
+	$color-accent-700: #6200ea !global;
+}
+
+// Indigo
+@mixin color-primary-indigo {
+	$color-primary-50:  #e8eaf6 !global;
+	$color-primary-100: #c5cae9 !global;
+	$color-primary-200: #9fa8da !global;
+	$color-primary-300: #7986cb !global;
+	$color-primary-400: #5c6bc0 !global;
+	$color-primary-500: #3f51b5 !global;
+	$color-primary-600: #3949ab !global;
+	$color-primary-700: #303f9f !global;
+	$color-primary-800: #283593 !global;
+	$color-primary-900: #1a237e !global;
+}
+@mixin color-accent-indigo {
+	$color-accent-100: #8c9eff !global;
+	$color-accent-200: #536dfe !global;
+	$color-accent-400: #3d5afe !global;
+	$color-accent-700: #304ffe !global;
+}
+
+// Blue
+@mixin color-primary-blue {
+	$color-primary-50:  #e7e9fd !global;
+	$color-primary-100: #d0d9ff !global;
+	$color-primary-200: #afbfff !global;
+	$color-primary-300: #91a7ff !global;
+	$color-primary-400: #738ffe !global;
+	$color-primary-500: #5677fc !global;
+	$color-primary-600: #4e6cef !global;
+	$color-primary-700: #455ede !global;
+	$color-primary-800: #3b50ce !global;
+	$color-primary-900: #2a36b1 !global;
+}
+@mixin color-accent-blue {
+	$color-accent-100: #a6baff !global;
+	$color-accent-200: #6889ff !global;
+	$color-accent-400: #4d73ff !global;
+	$color-accent-700: #4d69ff !global;
+}
+
+// Light Blue
+@mixin color-primary-lightblue {
+	$color-primary-50:  #e1f5fe !global;
+	$color-primary-100: #b3e5fc !global;
+	$color-primary-200: #81d4fa !global;
+	$color-primary-300: #4fc3f7 !global;
+	$color-primary-400: #29b6f6 !global;
+	$color-primary-500: #03a9f4 !global;
+	$color-primary-600: #039be5 !global;
+	$color-primary-700: #0288d1 !global;
+	$color-primary-800: #0277bd !global;
+	$color-primary-900: #01579b !global;
+}
+@mixin color-accent-lightblue {
+	$color-accent-100: #80d8ff !global;
+	$color-accent-200: #40c4ff !global;
+	$color-accent-400: #00b0ff !global;
+	$color-accent-700: #0091ea !global;
+}
+
+// Cyan
+@mixin color-primary-cyan {
+	$color-primary-50:  #e0f7fa !global;
+	$color-primary-100: #b2ebf2 !global;
+	$color-primary-200: #80deea !global;
+	$color-primary-300: #4dd0e1 !global;
+	$color-primary-400: #26c6da !global;
+	$color-primary-500: #00bcd4 !global;
+	$color-primary-600: #00acc1 !global;
+	$color-primary-700: #0097a7 !global;
+	$color-primary-800: #00838f !global;
+	$color-primary-900: #006064 !global;
+}
+@mixin color-accent-cyan {
+	$color-accent-100: #84ffff !global;
+	$color-accent-200: #18ffff !global;
+	$color-accent-400: #00e5ff !global;
+	$color-accent-700: #00b8d4 !global;
+}
+
+// Teal
+@mixin color-primary-teal {
+	$color-primary-50:  #e0f2f1 !global;
+	$color-primary-100: #b2dfdb !global;
+	$color-primary-200: #80cbc4 !global;
+	$color-primary-300: #4db6ac !global;
+	$color-primary-400: #26a69a !global;
+	$color-primary-500: #009688 !global;
+	$color-primary-600: #00897b !global;
+	$color-primary-700: #00796b !global;
+	$color-primary-800: #00695c !global;
+	$color-primary-900: #004d40 !global;
+}
+@mixin color-accent-teal {
+	$color-accent-100: #a7ffeb !global;
+	$color-accent-200: #64ffda !global;
+	$color-accent-400: #1de9b6 !global;
+	$color-accent-700: #00bfa5 !global;
+}
+
+// Green
+@mixin color-primary-green {
+	$color-primary-50:  #d0f8ce !global;
+	$color-primary-100: #a3e9a4 !global;
+	$color-primary-200: #72d572 !global;
+	$color-primary-300: #42bd41 !global;
+	$color-primary-400: #2baf2b !global;
+	$color-primary-500: #259b24 !global;
+	$color-primary-600: #0a8f08 !global;
+	$color-primary-700: #0a7e07 !global;
+	$color-primary-800: #056f00 !global;
+	$color-primary-900: #0d5302 !global;
+}
+@mixin color-accent-green {
+	$color-accent-100: #a2f78d !global;
+	$color-accent-200: #5af158 !global;
+	$color-accent-400: #14e715 !global;
+	$color-accent-700: #12c700 !global;
+}
+
+// Light Green
+@mixin color-primary-lightgreen {
+	$color-primary-50:  #f1f8e9 !global;
+	$color-primary-100: #dcedc8 !global;
+	$color-primary-200: #c5e1a5 !global;
+	$color-primary-300: #aed581 !global;
+	$color-primary-400: #9ccc65 !global;
+	$color-primary-500: #8bc34a !global;
+	$color-primary-600: #7cb342 !global;
+	$color-primary-700: #689f38 !global;
+	$color-primary-800: #558b2f !global;
+	$color-primary-900: #33691e !global;
+}
+@mixin color-accent-lightgreen {
+	$color-accent-100: #ccff90 !global;
+	$color-accent-200: #b2ff59 !global;
+	$color-accent-400: #76ff03 !global;
+	$color-accent-700: #64dd17 !global;
+}
+
+// Lime
+@mixin color-primary-lime {
+	$color-primary-50:  #f9fbe7 !global;
+	$color-primary-100: #f0f4c3 !global;
+	$color-primary-200: #e6ee9c !global;
+	$color-primary-300: #dce775 !global;
+	$color-primary-400: #d4e157 !global;
+	$color-primary-500: #cddc39 !global;
+	$color-primary-600: #c0ca33 !global;
+	$color-primary-700: #afb42b !global;
+	$color-primary-800: #9e9d24 !global;
+	$color-primary-900: #827717 !global;
+}
+@mixin color-accent-lime {
+	$color-accent-100: #f4ff81 !global;
+	$color-accent-200: #eeff41 !global;
+	$color-accent-400: #c6ff00 !global;
+	$color-accent-700: #aeea00 !global;
+}
+
+// Yellow
+@mixin color-primary-yellow {
+	$color-primary-50:  #fffde7 !global;
+	$color-primary-100: #fff9c4 !global;
+	$color-primary-200: #fff59d !global;
+	$color-primary-300: #fff176 !global;
+	$color-primary-400: #ffee58 !global;
+	$color-primary-500: #ffeb3b !global;
+	$color-primary-600: #fdd835 !global;
+	$color-primary-700: #fbc02d !global;
+	$color-primary-800: #f9a825 !global;
+	$color-primary-900: #f57f17 !global;
+}
+@mixin color-accent-yellow {
+	$color-accent-100: #ffff8d !global;
+	$color-accent-200: #ffff00 !global;
+	$color-accent-400: #ffea00 !global;
+	$color-accent-700: #ffd600 !global;
+}
+
+// Amber
+@mixin color-primary-amber {
+	$color-primary-50:  #fff8e1 !global;
+	$color-primary-100: #ffecb3 !global;
+	$color-primary-200: #ffe082 !global;
+	$color-primary-300: #ffd54f !global;
+	$color-primary-400: #ffca28 !global;
+	$color-primary-500: #ffc107 !global;
+	$color-primary-600: #ffb300 !global;
+	$color-primary-700: #ffa000 !global;
+	$color-primary-800: #ff8f00 !global;
+	$color-primary-900: #ff6f00 !global;
+}
+@mixin color-accent-amber {
+	$color-accent-100: #ffe57f !global;
+	$color-accent-200: #ffd740 !global;
+	$color-accent-400: #ffc400 !global;
+	$color-accent-700: #ffab00 !global;
+}
+
+// Orange
+@mixin color-primary-orange {
+	$color-primary-50:  #fff3e0 !global;
+	$color-primary-100: #ffe0b2 !global;
+	$color-primary-200: #ffcc80 !global;
+	$color-primary-300: #ffb74d !global;
+	$color-primary-400: #ffa726 !global;
+	$color-primary-500: #ff9800 !global;
+	$color-primary-600: #fb8c00 !global;
+	$color-primary-700: #f57c00 !global;
+	$color-primary-800: #ef6c00 !global;
+	$color-primary-900: #e65100 !global;
+}
+@mixin color-accent-orange {
+	$color-accent-100: #ffd180 !global;
+	$color-accent-200: #ffab40 !global;
+	$color-accent-400: #ff9100 !global;
+	$color-accent-700: #ff6d00 !global;
+}
+
+// Deep Orange
+@mixin color-primary-deeporange {
+	$color-primary-50:  #fbe9e7 !global;
+	$color-primary-100: #ffccbc !global;
+	$color-primary-200: #ffab91 !global;
+	$color-primary-300: #ff8a65 !global;
+	$color-primary-400: #ff7043 !global;
+	$color-primary-500: #ff5722 !global;
+	$color-primary-600: #f4511e !global;
+	$color-primary-700: #e64a19 !global;
+	$color-primary-800: #d84315 !global;
+	$color-primary-900: #bf360c !global;
+}
+@mixin color-accent-deeporange {
+	$color-accent-100: #ff9e80 !global;
+	$color-accent-200: #ff6e40 !global;
+	$color-accent-400: #ff3d00 !global;
+	$color-accent-700: #dd2c00 !global;
+}
+
+// Deep Brown
+@mixin color-primary-brown {
+	$color-primary-50:  #efebe9 !global;
+	$color-primary-100: #d7ccc8 !global;
+	$color-primary-200: #bcaaa4 !global;
+	$color-primary-300: #a1887f !global;
+	$color-primary-400: #8d6e63 !global;
+	$color-primary-500: #795548 !global;
+	$color-primary-600: #6d4c41 !global;
+	$color-primary-700: #5d4037 !global;
+	$color-primary-800: #4e342e !global;
+	$color-primary-900: #3e2723 !global;
+}
+
+// Grey
+@mixin color-primary-grey {
+	$color-primary-50:  #fafafa !global;
+	$color-primary-100: #f5f5f5 !global;
+	$color-primary-200: #eeeeee !global;
+	$color-primary-300: #e0e0e0 !global;
+	$color-primary-400: #bdbdbd !global;
+	$color-primary-500: #9e9e9e !global;
+	$color-primary-600: #757575 !global;
+	$color-primary-700: #616161 !global;
+	$color-primary-800: #424242 !global;
+	$color-primary-900: #212121 !global;
+}
+
+// Blue Grey
+@mixin color-primary-bluegrey {
+	$color-primary-50:  #eceff1 !global;
+	$color-primary-100: #cfd8dc !global;
+	$color-primary-200: #b0bec5 !global;
+	$color-primary-300: #90a4ae !global;
+	$color-primary-400: #78909c !global;
+	$color-primary-500: #607d8b !global;
+	$color-primary-600: #546e7a !global;
+	$color-primary-700: #455a64 !global;
+	$color-primary-800: #37474f !global;
+	$color-primary-900: #263238 !global;
+}
+
+// Default palette
+@include color-primary-red;
+@include color-accent-red;
