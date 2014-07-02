@@ -1,5 +1,5 @@
 {
-  "name": "inkcss",
+  "name": "materialdesign-web",
   "description": "css framework based on Google Material Design",
   "version": "0.0.0",
   "keywords": [
@@ -13,7 +13,7 @@
   "author": "Brandon Copeland <br@ndoncopeland.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brandoncopeland/inkcss.git"
+    "url": "https://github.com/brandoncopeland/materialdesign-web.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
