@@ -1,0 +1,42 @@
+@import "../scss/materialdesign-web.scss";
+
+body {
+	font-size: 13px;
+}
+
+.typography-display4 {
+	@include typography-display4;
+}
+.typography-display3 {
+	@include typography-display3;
+}
+.typography-display2 {
+	@include typography-display2;
+}
+.typography-display1 {
+	@include typography-display1;
+}
+.typography-headline {
+	@include typography-headline;
+}
+.typography-title {
+	@include typography-title;
+}
+.typography-subhead {
+	@include typography-subhead;
+}
+.typography-body2 {
+	@include typography-body2;
+}
+.typography-body1 {
+	@include typography-body1;
+}
+.typography-caption {
+	@include typography-caption;
+}
+.typography-menu {
+	@include typography-menu;
+}
+.typography-button {
+	@include typography-button;
+}
