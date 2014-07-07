@@ -1,0 +1,109 @@
+// _typography.scss
+// requires `style/_color.scss` to be loaded
+
+// Roboto
+@import url(//fonts.googleapis.com/css?family=Roboto:500,400,300,300italic,400italic,500italic);
+@mixin roboto-light {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+@mixin roboto-regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+@mixin roboto-medium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+// Scale
+// Font-sizes match specs if base font-size in body or other top level element set to 13px.
+@mixin typography-display4 {
+	@include roboto-light;
+	font-size: (112em/13);
+	color: $color-icons;
+	white-space: nowrap;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+}
+@mixin typography-display3 {
+	@include roboto-regular;
+	font-size: (56em/13);
+	color: $color-icons;
+	white-space: nowrap;
+	line-height: 1em;
+	letter-spacing: -0.005em;
+}
+@mixin typography-display2 {
+	@include roboto-regular;
+	font-size: (45em/13);
+	color: $color-icons;
+	white-space: nowrap;
+	line-height: (48em/45);
+	letter-spacing: 0em;
+}
+@mixin typography-display1 {
+	@include roboto-regular;
+	font-size: (34em/13);
+	color: $color-icons;
+	white-space: nowrap;
+	line-height: (40em/34);
+	letter-spacing: 0em;
+}
+@mixin typography-headline {
+	@include roboto-regular;
+	font-size: (24em/13);
+	color: $color-text;
+	line-height: (32em/24);
+	letter-spacing: 0em;
+}
+@mixin typography-title {
+	@include roboto-medium;
+	font-size: (20em/13);
+	color: $color-text;
+	line-height: 1em;
+	letter-spacing: 0.005em;
+}
+@mixin typography-subhead {
+	@include roboto-regular;
+	font-size: (15em/13);
+	color: $color-text;
+	line-height: (28em/15);
+	letter-spacing: 0.01em;
+}
+@mixin typography-body2 {
+	@include roboto-medium;
+	font-size: (13em/13);
+	color: $color-text;
+	line-height: (24em/13);
+	letter-spacing: 0.01em;
+}
+@mixin typography-body1 {
+	@include roboto-regular;
+	font-size: (13em/13);
+	color: $color-text;
+	line-height: (20em/13);
+	letter-spacing: 0.01em;
+}
+@mixin typography-caption {
+	@include roboto-regular;
+	font-size: (12em/13);
+	color: $color-icons;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+}
+@mixin typography-menu {
+	@include roboto-medium;
+	font-size: (13em/13);
+	color: $color-text;
+	line-height: 1em;
+	letter-spacing: 0.01em;
+}
+@mixin typography-button {
+	@include roboto-medium;
+	font-size: (14em/13);
+	color: $color-text;
+	text-transform: uppercase;
+	line-height: 1em;
+	letter-spacing: 0.01em;
+}
